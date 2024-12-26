@@ -218,6 +218,20 @@ else:
 
 ---
 
+## Knowledge check
+1. You've trained a model using the Python SDK for Azure Machine Learning. You want to deploy the model to get real-time predictions. You want to manage the underlying infrastructure used by the endpoint. What kind of endpoint should you create? 
+    - [ ] A managed online endpoint.
+    - [x] A Kubernetes online endpoint.
+    - [ ] A batch endpoint.
+    - [ ] A real-time endpoint.
+
+2. You're deploying a model as a real-time inferencing service. What functions must the scoring script for the deployment include? 
+    - [ ] `main()` and `score()`
+    - [ ] `base()` and `train()`
+    - [x] `init()` and `run()`
+
+---
+
 ## Resources
 - [Practice Steps](https://microsoftlearning.github.io/mslearn-azure-ml/Instructions/11-Deploy-online-endpoint.html)
 - [YouTube: Managed Endpoints](https://www.youtube.com/watch?v=SxFGw_OBxNM)

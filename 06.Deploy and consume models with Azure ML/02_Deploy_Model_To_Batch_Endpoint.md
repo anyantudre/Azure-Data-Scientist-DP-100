@@ -157,3 +157,16 @@ Logs can be found under `Outputs + logs`:
 - **job_error.txt**: Summarizes errors in the script.
 - **job_progress_overview.txt**: Provides mini-batch processing progress.
 - **job_result.txt**: Shows errors in `init()` or `run()` functions.
+
+---
+
+## Knowledge check
+1. You are creating a batch endpoint that you want to use to predict new values for a large volume of data files. You want the pipeline to run the scoring script on multiple nodes and collate the results. What output action should you choose for the deployment? 
+    - [ ] `summary_only`
+    - [x] `append_row`. Correct. You should use append_row to append each prediction to one output file.
+    - [ ] `concurrency`
+
+2. You have multiple models deployed to a batch endpoint. You invoke the endpoint without indicating which model you want to use. Which deployed model will do the actual batch scoring? 
+    - [ ] The latest version of the deployed model.
+    - [ ] The latest deployed model.
+    - [x] The default deployed model. Correct. The default deployment will be used to do the actual batch scoring when the endpoint is invoked.

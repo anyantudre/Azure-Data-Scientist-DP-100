@@ -118,3 +118,14 @@ model = ml_client.models.create_or_update(
 ```
 
 Registered models can be deployed directly to endpoints, benefiting from Azure ML’s no-code deployment features.
+
+## Knowledge check
+1. A data scientist trains and logs a model with MLflow. When the data scientist deploys the model, the schema of the model's input and output isn't correct. What should the data scientist customize to fix the issue? 
+    - [ ] Customize the model's environment.
+    - [ ] Change the model's flavor.
+    - [x] Customize the model's signature. Correct. The model's signature defines the schemas of the inputs and outputs.
+
+2. A data scientist trained a deep learning model with TensorFlow. The deployed model is compute-intensive and needs to use the most optimal inference server for similar workloads. Which model type is compatible with compute-intensive and no-code deployments? 
+    - [ ] MLflow 
+    - [x] Triton. Correct. Triton is ideal for compute-intensive deployments.
+    - [ ] Custom
